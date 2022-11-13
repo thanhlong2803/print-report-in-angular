@@ -1,2 +1,2 @@
-# print-report-in-angular
+# Print HTML, avoid break page and paging for per page
 Print HTML , break page , paging. It help control...
