@@ -1,0 +1,52 @@
+@page {
+  size: A4 landscape;
+}
+
+/* Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol .. */
+/* Table */
+table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  page-break-inside: auto;
+}
+table {
+  text-align: center;
+  font-weight: bold;
+}
+table tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+  border: 1px solid #333;
+}
+table tr th {
+  border: 1px solid #333;
+  height: 2.2em;
+}
+table tr {
+  text-align: center;
+  page-break-inside: avoid !important;
+  page-break-after: auto;
+  border: 1px solid #333;
+}
+table tr td {
+  padding: 5px 0px 0px 0px;
+  height: 2em;
+  max-width: 100pt;
+  min-width: 20pt;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  border: 1px solid #333;
+}
+
+/*# sourceMappingURL=lprint.css.map */
+
+@media print {
+  @page {
+  }
+  #not-print {
+    display: none;
+  }
+}
